@@ -1,0 +1,9 @@
+:root {
+  color-scheme: light dark;
+
+  @apply
+  bg-gray-100
+  dark:bg-gray-900
+  text-black
+  dark:text-white;
+}

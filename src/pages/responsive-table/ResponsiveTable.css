@@ -1,0 +1,49 @@
+table {
+  @apply
+  rounded-lg
+}
+
+th, tr, td {
+  @apply
+  text-start
+  px-6
+  py-3
+}
+
+thead {
+  @apply
+  bg-gray-200 dark:bg-black
+  text-xs
+  uppercase
+  text-gray-700 dark:text-gray-400
+  hidden sm:table-header-group
+}
+
+tbody tr {
+  @apply
+  border-b
+  last:border-b-0
+  bg-white
+  dark:bg-gray-800
+  dark:border-gray-700
+  odd:bg-white
+  even:bg-gray-50
+  odd:dark:bg-gray-800
+  even:dark:bg-gray-700
+}
+
+tbody td {
+  @apply
+  grid sm:table-cell
+  grid-cols-2
+  before:content-[attr(data-cell)] sm:before:content-[]
+  before:font-semibold
+  before:mr-4
+}
+
+.table-wrapper {
+  @apply
+  rounded-lg
+  overflow-auto
+  shadow-md
+}
