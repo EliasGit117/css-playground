@@ -4,10 +4,8 @@ import appRouter from './App.Router.tsx';
 
 
 function App() {
-
   return (
-    <RouterProvider router={appRouter}/>
-    // <ResponsiveTable/>
+    <RouterProvider router={appRouter} />
   )
 }
 

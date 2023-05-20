@@ -31,8 +31,8 @@ const ResponsiveTable: FC = () => {
           </thead>
           <tbody>
           {
-            data.map(d =>
-              <tr>
+            data.map((d) =>
+              <tr key={d.contact}>
                 <td data-cell="Company">{d.company}</td>
                 <td data-cell="Contact">{d.contact}</td>
                 <td data-cell="Country">{d.country}</td>
